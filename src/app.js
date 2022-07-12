@@ -6,7 +6,7 @@ var doms = "";
 for (var i of pronoun) {
   for (var j of adj) {
     for (var k of noun) {
-      doms = doms + "<li>" + i + j + k + ".com</li>";
+      doms += "<li>" + i + j + k + ".com</li>";
     }
   }
 }
