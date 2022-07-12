@@ -1,11 +1,14 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+let pronoun = ["the", "our"];
+let adj = ["great", "big"];
+let noun = ["jogger", "racoon"];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+var doms = "";
+for (var i of pronoun) {
+  for (var j of adj) {
+    for (var k of noun) {
+      doms = doms + "<li>" + i + j + k + ".com</li>";
+    }
+  }
+}
+document.getElementById("dominios").innerHTML = doms;
+//console.log("Any string");
